@@ -45,9 +45,9 @@ const Contact = () => {
 
             <input type="hidden" name="_next" value="http://localhost:3000/thankyou"></input>
             <div className={styles.socialIconsContainer}>
-                <a className={styles.socialLink} href='https://www.facebook.com/thurein.win.5458' target="_blank"><Icon icon="akar-icons:facebook-fill" className='social-icon' /></a>
-                <a className={styles.socialLink} href='http://t.me/Icarus69420' target="_blank"><Icon icon="akar-icons:telegram-fill"  className='social-icon'/></a>
-                <a className={styles.socialLink} href='https://www.linkedin.com/in/thurein-win-0bb31523a' target="_blank"><Icon icon="entypo-social:linkedin-with-circle" className='social-icon' /></a>
+                <a className={styles.socialLink} href='https://www.facebook.com/thurein.win.5458' target="_blank" rel='noreffer'><Icon icon="akar-icons:facebook-fill" className='social-icon' /></a>
+                <a className={styles.socialLink} href='http://t.me/Icarus69420' target="_blank" rel='noreffer'><Icon icon="akar-icons:telegram-fill"  className='social-icon'/></a>
+                <a className={styles.socialLink} href='https://www.linkedin.com/in/thurein-win-0bb31523a' target="_blank" rel='noreffer'><Icon icon="entypo-social:linkedin-with-circle" className='social-icon' /></a>
             </div>
         </form>
         <svg className={styles.contactSvg1} width="157" height="126" viewBox="0 0 157 126" fill="none" xmlns="http://www.w3.org/2000/svg">
