@@ -8,7 +8,7 @@ const Card = ({projectImg,projectName,projectLink,smallText}) => {
         <img src={projectImg} alt="project image"/>
         <div className={styles.projectDetailsContainer}>
             <p className={styles.projectName}>{projectName}<span className={styles.smallText}>{smallText}</span></p>
-            <a className={styles.projectLink} href={projectLink} target="_blank">
+            <a className={styles.projectLink} href={projectLink} target="_blank" rel='noreferrer'>
                 Visit
                 <Icon className={styles.projectLinkArrow} icon="bi:arrow-down-right" />
             </a>

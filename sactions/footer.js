@@ -35,9 +35,9 @@ const Footer = () => {
           <div className={styles.contactSocialLinksContainer}>
             <p className={styles.footerLinksHeader}>Contact</p>
             <div className={styles.socialIconsContainer}>
-                <a className={styles.socialLink} href='https://www.facebook.com/thurein.win.5458' target="_blank" rel='noreffer'><Icon icon="akar-icons:facebook-fill"  className={`social-icon ${styles.footerSocialIcon}`}/></a>
-                <a className={styles.socialLink} href='http://t.me/Icarus69420' target="_blank" rel='noreffer'><Icon icon="akar-icons:telegram-fill" className={`social-icon ${styles.footerSocialIcon}`} /></a>
-                <a className={styles.socialLink} href='https://www.linkedin.com/in/thurein-win-0bb31523a' target="_blank" rel='noreffer'><Icon icon="entypo-social:linkedin-with-circle" className={`social-icon ${styles.footerSocialIcon}`} /></a>
+                <a className={styles.socialLink} href='https://www.facebook.com/thurein.win.5458' target="_blank" rel='noreferrer'><Icon icon="akar-icons:facebook-fill"  className={`social-icon ${styles.footerSocialIcon}`}/></a>
+                <a className={styles.socialLink} href='http://t.me/Icarus69420' target="_blank" rel='noreferrer'><Icon icon="akar-icons:telegram-fill" className={`social-icon ${styles.footerSocialIcon}`} /></a>
+                <a className={styles.socialLink} href='https://www.linkedin.com/in/thurein-win-0bb31523a' target="_blank" rel='noreferrer'><Icon icon="entypo-social:linkedin-with-circle" className={`social-icon ${styles.footerSocialIcon}`} /></a>
             </div>
           </div>
 
