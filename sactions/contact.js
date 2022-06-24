@@ -43,7 +43,7 @@ const Contact = () => {
             <button  className={styles.formBtn}>Send</button>
             <input type="hidden" name="_captcha" value="false"></input>
 
-            <input type="hidden" name="_next" value="http://localhost:3000/thankyou"></input>
+            <input type="hidden" name="_next" value="https://icarus-portfolio.vercel.app/thankyou"></input>
             <div className={styles.socialIconsContainer}>
                 <a className={styles.socialLink} href='https://www.facebook.com/thurein.win.5458' target="_blank" rel="noreferrer"><Icon icon="akar-icons:facebook-fill" className='social-icon' /></a>
                 <a className={styles.socialLink} href='http://t.me/Icarus69420' target="_blank" rel='noreferrer'><Icon icon="akar-icons:telegram-fill"  className='social-icon'/></a>
