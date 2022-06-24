@@ -1,0 +1,24 @@
+.logo {
+    width:3.75rem;
+    height: auto;
+}
+
+.ilogo{
+    fill: var(--text-color);
+    stroke: var(--text-color);
+}
+
+.logowings{
+    stroke: var(--primary-color);
+}
+
+.white{
+    fill: white;
+    stroke: white;
+}
+
+@media screen and (max-width: 1000px){
+    .logo{
+        width:3.125rem;
+    }
+}

@@ -1,0 +1,122 @@
+.footerContainer{
+    width: 100%;
+    background-color: var(--overlay-color);
+    padding-top: 2.5rem;
+    padding-bottom: 1.25rem;
+    margin-top: 4.375rem;
+}
+
+.footerSection{
+    display: grid;
+    grid-template-areas: "a b c";
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 51.438rem;
+    margin: auto;
+}
+
+.logoContainer{
+    display: flex;
+    align-items: center;
+    grid-area: a;
+    cursor: pointer;
+}
+
+.logoText{
+    font-size: 1.75rem;
+    margin-left: 0.625rem;
+    font-weight: 400;
+    color: white;
+}
+
+.footerLinksContainer{
+    grid-area: b;
+}
+
+.footerLinksHeader{
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    color: white;
+}
+
+.footerLink{
+    color: white;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.footerLink:not(:last-child){
+    margin-bottom: 0.625rem;
+}
+
+.contactSocialLinksContainer{
+    grid-area: c;
+}
+
+.footerLink:hover{
+    color: var(--primary-color);
+    /* font-weight: bold; */
+}
+
+.socialLink:not(:last-child){
+    margin-right: 2.5rem;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 4.375rem;
+    color: white;
+}
+
+@media screen and (max-width: 1000px){
+
+    .logoText{
+        font-size:1.5rem;
+    }
+
+    .footerSection{
+        max-width: 41.625rem;
+    }
+
+    .socialLink:not(:last-child){
+        margin-right: 2.188rem;
+    }
+
+    .footerSocialIcon{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .footerSection{
+        max-width: 25rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:"a b"
+                            "c b";
+        /* place-items: center; */
+    }
+
+    .logoContainer{
+        justify-self: start;
+        align-items: flex-start;
+    }
+
+    .footerLinksContainer{
+        justify-self: end;
+
+    }
+
+    .contactSocialLinksContainer{
+        align-self: flex-end;
+    }
+
+    .socialLink:not(:last-child){
+        margin-right: 0.625rem;
+    }
+
+    .copyright{
+        font-size:0.813rem;
+    }
+}

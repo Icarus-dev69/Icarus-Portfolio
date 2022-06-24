@@ -1,0 +1,250 @@
+.contactSection{
+    margin-top: 6.25rem;
+    position: relative;
+    /* overflow: hidden; */
+    height:43.75rem;
+}
+
+.contactForm{
+    background-color: var(--form-color);
+    padding: 2.5rem 4.063rem;
+    display: inline-block;
+    /* margin:0 auto; */
+    /* min-width: 35rem; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    position: relative;
+    margin-top: 2.5rem;
+    /* z-index: 1; */
+}
+
+.floatingLabelContainer{
+    width: 26.25rem;
+    height: 3.125rem;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.floatingLabelContainer input{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.floatingLabelContainer .label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0,-50%);
+    margin: 0;
+    pointer-events: none;
+    transition: all 200ms ease-in-out;
+    color: var(--form-label-color);
+}
+
+
+/* .message-container{
+    width: 100%;
+} */
+
+.messageContainer{
+    width: 26.25rem;
+    height: 11.25rem;
+    position: relative;
+}
+
+.messageLabel{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: var(--form-label-color);
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.messageInput{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.floatingLabelContainer input:focus ~ .label, .floatingLabelContainer input:not(:placeholder-shown) ~ .label{
+    top: 0;
+    left: 20px;
+    font-size: 15px;
+    background-image: linear-gradient(var(--form-color) 50%,white 50%);
+    /* background: transparent; */
+    color:black;
+    /* border-radius: 10px; */
+    font-weight: 500;
+}
+
+.floatingLabelContainer input:focus, .messageInput:focus{
+    outline: none;
+    border: 3px solid var(--primary-color);
+}
+
+.messageInput:focus ~ .messageLabel, .messageInput:not(:placeholder-shown) ~ .messageLabel{
+    top: -10px;
+    font-size: 15px;
+    color: black;
+    background-image: linear-gradient(var(--form-color) 50%,white 50%);
+    font-weight: 600;
+}
+
+.formBtn{
+    border: none;
+    padding:0.625rem 1.875rem;
+    display: block;
+    margin: auto;
+    margin-top: 2.5rem;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.formBtn:hover{
+    background-color: var(--cta-hover);
+}
+
+.socialIconsContainer{
+    position: absolute;
+    bottom: 0;
+    right: -5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.socialLink:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.contactFormContainer{
+    position: relative;
+    width: 34.375rem;
+    margin: auto;
+}
+
+.contactSvg1{
+    position: absolute;
+    top: 15px;
+    right: -50px;
+    /* z-index: -2; */
+}
+.contactSvg2{
+    position: absolute;
+    z-index: -1;
+    bottom: -80px;
+    left: -180px;
+}
+
+.ContactWatermark{
+    top: 100px;
+}
+
+
+@media screen and (max-width:1400px){
+    .formBtn{
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width:1000px){
+
+    .contactSection{
+        height: 39.375rem;
+    }
+    .contactFormContainer{
+        width: 25.813rem;
+    }
+    .contactForm{
+        padding: 2.5rem;
+    }
+    .floatingLabelContainer{
+        width: 20.813rem;
+        height: 2.5rem;
+    }
+    .messageContainer{
+        width: 20.813rem;
+        height: 10rem;
+    }
+
+    .contactSvg1{
+        transform: scale(0.7);
+		transform-origin: top left;
+        top: 20px;
+        right: -80px;
+    }
+    .contactSvg2{
+        transform: scale(0.7);
+		transform-origin: top left;
+        bottom: -140px;
+        left: -100px;
+    }
+
+    .ContactWatermark{
+        top: 150px;
+    }
+
+}
+
+@media screen and (max-width:700px){
+    .contactSection{
+        height: 620px;
+        margin-top: 5.625rem;
+    }
+
+    .contactFormContainer{
+        width: 100%;
+        /* margin: 0; */
+    }
+    .contactForm{
+        padding: 1.563rem 0.938rem;
+    }
+    .floatingLabelContainer{
+        width: 16.875rem;
+        /* margin-bottom: 40px; */
+    }
+    .messageContainer {
+        width: 16.875rem;
+        /* margin-bottom: 40px; */
+    }
+
+    .socialIconsContainer{
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -5rem;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .social-icon{
+        font-size:40px;
+    }
+
+    .socialLink:not(:last-child){
+        margin-bottom: 0;
+        margin-right: 2.5rem;
+    }
+
+    .contactSvg1{
+       display: none;
+    }
+    .contactSvg2{
+        display: none;
+    }
+
+    .ContactWatermark{
+        display: none;
+    }
+}

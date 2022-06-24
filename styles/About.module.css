@@ -1,0 +1,126 @@
+.aboutSection{
+    margin-top: 5.625rem;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.aboutContentContainer{
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+    text-align: center;
+    margin-top: 6.25rem;
+}
+
+.aboutImgContainer{
+    width: 23.438rem;
+    height: 31.25rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.aboutImgContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.aboutSvg1{
+    position: absolute;
+    top: -80px;
+    right: -180px;
+    z-index: -1;
+}
+
+.aboutSvg2{
+    position: absolute;
+    right: -100px;
+    bottom: -50px;
+}
+
+.aboutText{
+    line-height: 32px;
+    text-align: start;
+}
+
+.aboutWatermark{
+    top: 120px;
+}
+
+@media screen and (max-width:1400px){
+    .aboutImgContainer{
+        width: 21.25rem;
+        height: 28.313rem;
+    }
+
+    .aboutSvg1, .aboutSvg2{
+        transform: scale(0.8);
+		transform-origin: top left;
+    }
+
+    .aboutSvg1{
+        top: -50px;
+        right: -250px;
+    }
+
+    .aboutSvg2{
+        right: -150px;
+        bottom: -80px;
+    }
+
+    .aboutText{
+        line-height: 29px;
+    }
+}
+
+@media screen and (max-width:1000px){
+
+    .aboutContentContainer{
+        margin-top: 4.063rem;
+    }
+    .aboutImgContainer{
+        width: 15rem;
+        height: 20rem;
+    }
+
+    .aboutSvg1{
+        transform: scale(0.6);
+		transform-origin: top left;
+        top: -40px;
+        right: -280px;
+    }
+    .aboutSvg2{
+        transform: scale(0.5);
+		transform-origin: top left;
+
+        right: -200px;
+        bottom: -130px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .aboutContentContainer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5rem;
+    }
+
+    /* .aboutImgContainer{
+        text-align: center;
+    } */
+
+    .aboutText{
+        margin-top: 3.75rem;
+        text-align: center;
+    }
+
+    .aboutWatermark{
+        top: 380px;
+    }
+
+    .aboutSvg1{
+        top: -20px;
+        right: -200px;
+    }
+}

@@ -1,0 +1,188 @@
+.heroSection{
+	margin-top: 6.5rem;
+	position: relative;
+}
+
+.watermarkBig{
+	font-size: 31.25rem;
+	text-align: center;
+	color: var(--water-mark-color);
+	opacity: var(--water-mark-opacity);
+	position: absolute;
+	pointer-events: none;
+	left: -80px;
+	top: -80px;
+	z-index: -1;
+}
+
+.heroContainer{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.heroTextContainer{
+	/* margin-top: 3rem; */
+}
+
+.heroTextSmall{
+	margin-bottom: 5px;
+	color: var(--sec-text);
+}
+
+.heroTextBig{
+	margin-bottom: 6.25rem;
+}
+
+.heroTextAccent{
+	color: var(--primary-color);
+	position: relative;
+}
+
+.heroTextAccent svg{
+	position: absolute;
+	bottom: -29px;
+	left: 3px;
+}
+
+.heroCtaContainer{
+	display: inline-flex;
+}
+
+.heroSecLinkContainer{
+	display: flex;
+	align-items: center;
+	margin-left: 3.75rem;
+	cursor: pointer;
+}
+
+.heroSecLinkText{
+	color: var(--primary-color);
+}
+
+.heroSecLinkArrow{
+	color: var(--primary-color);
+	transform: rotate(-45deg);
+	margin-left: 5px;
+	transition: margin-left 0.2s ease-in-out;
+}
+
+.heroSecLinkContainer:hover .heroSecLinkArrow{
+	margin-left: 15px;
+}
+
+.heroImgContainer{
+	width: 21.135rem;
+	height:36.25rem;
+	object-fit: fill;
+	margin-right: 6.875rem;
+	position: relative;
+}
+
+.heroImgContainer img{
+	width: 100%;
+	height: 100%;
+}
+
+.heroImgSvg1{
+	position: absolute;
+	top: 300px;
+	right: -100px;
+}
+.heroImgSvg2{
+	position: absolute;
+	top: 400px;
+	right: -20px;
+	z-index: -1;
+}
+
+@media screen and (max-width:1400px){
+	.heroTextAccent svg{
+		transform: scale(0.8);
+		transform-origin: top left;
+	}
+
+	.heroTextBig{
+		margin-bottom: 3.75rem;
+	}
+
+	.heroTextSmall{
+		margin-bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 1000px){
+
+	.watermarkBig{
+		font-size: 15.313rem;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 60px;
+	}
+
+	
+	.heroImgContainer{
+		width: 17.75rem;
+		height: 30.5rem;
+		/* width: 20.438rem;
+		height: 35.125rem; */
+		margin-right: 0;
+	}
+
+	.heroTextContainer{
+		width: 24.75rem;
+	}
+
+	.heroTextBig{
+		margin-bottom: 2.813rem;
+	}
+
+	.heroSection{
+		margin-top: 8rem;
+	}
+
+	.heroImgSvg1{
+		transform: scale(0.5);
+		transform-origin: top left;
+		top: 250px;
+		right: -150px;
+	}
+
+	.heroImgSvg2{
+		transform: scale(0.7);
+		transform-origin: top left;
+		top: 350px;
+		right: -100px;
+		z-index: -1;
+	}
+}
+
+@media screen and (max-width: 700px){
+
+	.heroTextSmall{
+		margin-bottom: 0px;
+	}
+
+	.watermarkBig{
+		/* display: none; */
+		font-size: 8rem;
+		top: -20px;
+	}
+	.heroImgContainer{
+		display: none;
+		
+	}
+
+	/* .heroContainer{
+		display: block;
+	} */
+	.heroTextContainer{
+		width: 100%;
+	}
+
+	.heroSection{
+		margin-top: 11rem;
+		text-align: center;
+	}
+}
+

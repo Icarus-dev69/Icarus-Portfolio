@@ -1,0 +1,38 @@
+.cardContainer{
+    width: 18.125rem;
+    /* height: 14.938rem; */
+    border-radius: 10px;
+    /* background-color: var(--background-color); */
+    
+}
+
+.cardContainer img{
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow:1px 1px 8px 0px rgba(0,0,0,0.5)
+}
+
+.projectDetailsContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.625rem;
+}
+
+.projectLink{
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+.projectLinkArrow{
+    transform: rotate(-45deg);
+    margin-left: 5px;
+}
+
+.smallText{
+    font-size: 14px;
+}
