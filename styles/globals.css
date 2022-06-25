@@ -24,7 +24,7 @@ html, body {
   --cta-hover:#50d9ff;
   --accent-color: #DA58EF;
   --water-mark-color: #D1D1D1;
-  --water-mark-opacity: 4%;
+  --water-mark-opacity: 6%;
   --form-label-color : #767676;
   --form-color: #555555;
   --sec-text: #d1d1d1;
@@ -37,7 +37,7 @@ html, body {
   --primary-color: #058ED9;
   --cta-hover:#42b5f3;
   --accent-color: #9F59D9;
-  --water-mark-color: #000000;
+  --water-mark-color: #202020;
   --water-mark-opacity: 3%;
   --form-label-color : #767676;
   --form-color: #555555;
