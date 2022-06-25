@@ -65,13 +65,13 @@ const Navbar = () => {
             <div className={isNavOpen ? `${styles.navLinks} ${styles.clipOpen}` : styles.navLinks}>
               {
                 router.pathname == "/" ? 
-                <ScrollLink className={theme == "light" ? styles.lightThemeLinks : undefined} activeClass={styles.active} to="home" spy={true} smooth={true} offset={-120} duration={500}>Home</ScrollLink>:
+                <ScrollLink onClick={() =>setIsNavOpen(false)} className={theme == "light" ? styles.lightThemeLinks : undefined} activeClass={styles.active} to="home" spy={true} smooth={true} offset={-120} duration={500}>Home</ScrollLink>:
                 <Link href= "/" passHref><a className={theme == "light" ? styles.lightThemeLinks : undefined}>Home</a></Link>
               }
               
-              <ScrollLink className={theme == "light" ? styles.lightThemeLinks : undefined} activeClass={styles.active} to="about" spy={true} smooth={true} offset={-100} duration={500}>About</ScrollLink>
-              <ScrollLink className={theme == "light" ? styles.lightThemeLinks : undefined} activeClass={styles.active} to="skills" spy={true} smooth={true} offset={-100} duration={500}>Skills</ScrollLink>
-              <ScrollLink className={theme == "light" ? styles.lightThemeLinks : undefined} activeClass={styles.active} to="contact" spy={true} smooth={true} offset={-100} duration={500}>Contact</ScrollLink>
+              <ScrollLink onClick={() => setIsNavOpen(false)} className={theme == "light" ? styles.lightThemeLinks : undefined} activeClass={styles.active} to="about" spy={true} smooth={true} offset={-100} duration={500}>About</ScrollLink>
+              <ScrollLink onClick={() =>setIsNavOpen(false)} className={theme == "light" ? styles.lightThemeLinks : undefined} activeClass={styles.active} to="skills" spy={true} smooth={true} offset={-100} duration={500}>Skills</ScrollLink>
+              <ScrollLink onClick={() =>setIsNavOpen(false)} className={theme == "light" ? styles.lightThemeLinks : undefined} activeClass={styles.active} to="contact" spy={true} smooth={true} offset={-100} duration={500}>Contact</ScrollLink>
               <Link href= "/projects" passHref><a className="ctaMain">Projects</a></Link>
             </div>
 

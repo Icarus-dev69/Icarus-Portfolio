@@ -58,6 +58,11 @@ const Contact = () => {
             </svg>
       </div>
 
+      <div className={styles.contactEmailContainer}>
+        <Icon className={styles.envelope} icon="el:envelope-alt" />
+        <p className={styles.contactEmail}>thureinwin.dev@gmail.com</p>
+      </div>  
+
       </section>
     </div>
   )
