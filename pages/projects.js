@@ -23,6 +23,7 @@ const Projects = () => {
                     <Card projectImg={"/project2.png"} projectName={"Icandi Furniture"} projectLink={"https://icand-i-furniture.vercel.app/"}/>
                     <Card projectImg={"/project3.png"} projectName={"Icandy Portfolio"} projectLink={"https://portfolio-umber-beta.vercel.app/"}/>
                     <Card projectImg={"/project4.png"} projectName={"Icarus Ecommerce"} projectLink={"https://ecommerce-client-sandy.vercel.app/"}/>
+                    
             </div>
             <div className={styles.projectsContainer}>
                 <Card projectImg={"/project5.png"} projectName={"Icarus Ecommerce"} smallText={"(Admin)"} projectLink={"https://icarus-ecommerce-admin.herokuapp.com/"}/>
