@@ -26,6 +26,7 @@ const Projects = () => {
             </div>
             <div className={styles.projectsContainer}>
                 <Card projectImg={"/project5.png"} projectName={"Icarus Ecommerce"} smallText={"(Admin)"} projectLink={"https://icarus-ecommerce-admin.herokuapp.com/"}/>
+                <Card projectImg={"/project6.png"} projectName={"YC Fitness"} projectLink={"https://www.yc.fitness/"}/>
             </div>
         </div>
         <Footer/>
