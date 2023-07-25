@@ -21,6 +21,7 @@ html, body {
   --background-color: #050505;
   --text-color: #FFFFFF;
   --primary-color: #01BAEF;
+  --primary-color-soft: rgba(1, 186, 239, 0.4);
   --cta-hover:#50d9ff;
   --accent-color: #DA58EF;
   --water-mark-color: #D1D1D1;
@@ -35,6 +36,7 @@ html, body {
   --background-color: #FDFDFD;
   --text-color: #000000;
   --primary-color: #058ED9;
+  --primary-color-soft: rgba(5, 142, 217, 0.4);
   --cta-hover:#42b5f3;
   --accent-color: #9F59D9;
   --water-mark-color: #202020;

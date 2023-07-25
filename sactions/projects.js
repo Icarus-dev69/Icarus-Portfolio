@@ -25,10 +25,10 @@ const Projects = () => {
                     <Icon className={styles.seeAllArrow} icon="bi:arrow-down-right" />
                     </a>
                 </Link>
-                <Card projectImg={"/project1.png"} projectName={"Icarus Cafe"} projectLink={"https://cafe-bar.vercel.app/"}/>
+                <Card projectImg={"/peep-kicks.png"} projectName={"Peep Kicks"} projectLink={"https://peep-kicks.vercel.app/"}/>
                 <Card projectImg={"/project2.png"} projectName={"Icandi Furniture"} projectLink={"https://icand-i-furniture.vercel.app/"}/>
-                <Card projectImg={"/project3.png"} projectName={"Icandy Portfolio"} projectLink={"https://portfolio-umber-beta.vercel.app/"}/>
-                <Card projectImg={"/project4.png"} projectName={"Icarus Ecommerce"} projectLink={"https://ecommerce-client-sandy.vercel.app/"}/>
+                <Card projectImg={"/project3.png"} projectName={"Icandy Portfolio"} projectLink={"https://icandy-portfolio.vercel.app/"}/>
+                <Card projectImg={"/charity.png"} projectName={"Peach Charity"} projectLink={"https://charity-peach.vercel.app/"}/>
             </div>
 
         </section>
